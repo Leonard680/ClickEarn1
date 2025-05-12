@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tap & Earn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .top-bar {
+      background: #0047AB;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .tap-button {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .tap-button button {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #007BFF;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .withdraw-container {
+      background: #fff;
+      color: #000;
+      padding: 15px;
+      margin: 0 10px;
+      border-radius: 8px;
+    }
+
+    .withdraw-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .withdraw-container button {
+      width: 100%;
+      padding: 10px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .withdrawals {
+      margin: 20px 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .tap-button button {
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+      }
+
+      .withdraw-container {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">Balance: 0 COINS</div>
+
+  <div class="tap-button">
+    <button>TAP ME</button>
+  </div>
+
+  <div class="withdraw-container">
+    <h3>Withdraw Coins</h3>
+    <input type="text" placeholder="Bank">
+    <input type="text" placeholder="Account Number">
+    <input type="text" placeholder="Account Name">
+    <input type="number" placeholder="Amount (min: 200000)">
+    <button>Withdraw</button>
+  </div>
+
+  <div class="withdrawals">
+    <strong>Your Last 10 Withdrawals</strong>
+  </div>
+
+</body>
+  </html>
